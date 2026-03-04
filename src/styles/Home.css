@@ -248,8 +248,8 @@
 
 @media (min-width: 992px) {
     .why-us-grid {
-        grid-template-columns: 1.2fr 1fr;
-        gap: 80px;
+        grid-template-columns: 1fr 1fr;
+        gap: 60px;
     }
 }
 
@@ -281,6 +281,10 @@
     border-radius: var(--radius-lg);
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s ease;
+    width: 100%;
+    max-width: 100%;
+    display: block;
+    object-fit: cover;
 }
 
 .rounded-image:hover {
