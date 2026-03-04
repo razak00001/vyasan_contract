@@ -1,8 +1,10 @@
 .footer {
-    background-color: var(--color-primary);
+    background: var(--gradient-primary);
     color: #E2E8F0;
     padding: 80px 0 30px;
     font-family: var(--font-body);
+    position: relative;
+    overflow: hidden;
 }
 
 .footer-grid {
@@ -74,8 +76,9 @@
 }
 
 .social-icon:hover {
-    background: var(--color-accent);
-    transform: translateY(-3px);
+    background: var(--gradient-accent);
+    transform: translateY(-5px) scale(1.1);
+    box-shadow: var(--shadow-glow);
 }
 
 .footer-heading {

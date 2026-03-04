@@ -38,20 +38,24 @@
 }
 
 .contact-method-card {
-    background-color: var(--color-surface);
+    background-color: white;
     padding: 24px;
-    border-radius: var(--radius-lg);
+    border-radius: var(--radius-xl);
     display: flex;
     align-items: flex-start;
     gap: 16px;
-    transition: all var(--transition-normal);
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
     text-decoration: none;
     color: var(--color-text);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+    box-shadow: var(--shadow-sm);
 }
 
 .contact-method-card:hover:not(.service-area-card) {
-    background-color: var(--color-primary);
+    background: var(--gradient-primary);
     color: white;
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
 }
 
 .contact-method-card:hover:not(.service-area-card) .contact-icon {
@@ -104,12 +108,15 @@
 }
 
 .contact-form-panel {
-    background-color: white;
-    padding: 32px;
-    border-radius: var(--radius-lg);
-    box-shadow: var(--shadow-lg);
-    border: 1px solid var(--color-border);
-    top: -60px;
+    background-color: rgba(255, 255, 255, 0.98);
+    backdrop-filter: blur(20px);
+    padding: 40px;
+    border-radius: var(--radius-xl);
+    box-shadow: var(--shadow-xl);
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    top: -80px;
+    position: relative;
+    z-index: 10;
 }
 
 .contact-form-title {
@@ -168,11 +175,11 @@
 .form-group textarea {
     padding: 16px 20px;
     border: 1px solid var(--color-border);
-    border-radius: var(--radius-sm);
+    border-radius: var(--radius-md);
     font-family: var(--font-body);
     font-size: 16px;
     background-color: var(--color-surface);
-    transition: all var(--transition-fast);
+    transition: all 0.3s ease;
 }
 
 .form-group input:focus,

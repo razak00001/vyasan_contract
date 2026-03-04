@@ -1,10 +1,12 @@
 .project-card {
     position: relative;
-    border-radius: var(--radius-md);
+    border-radius: var(--radius-xl);
     overflow: hidden;
     box-shadow: var(--shadow-md);
     aspect-ratio: 4 / 3;
     cursor: pointer;
+    transform: translateZ(0);
+    /* Force hardware acceleration */
 }
 
 .project-img {
@@ -21,13 +23,14 @@
 .project-overlay {
     position: absolute;
     inset: 0;
-    background: linear-gradient(to top, rgba(26, 47, 79, 0.95) 0%, rgba(26, 47, 79, 0) 100%);
+    background: linear-gradient(to top, rgba(17, 30, 51, 0.95) 0%, rgba(17, 30, 51, 0.4) 50%, rgba(17, 30, 51, 0) 100%);
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     padding: 40px;
     opacity: 0;
-    transition: opacity var(--transition-normal);
+    transition: all 0.4s ease;
+    backdrop-filter: blur(4px);
 }
 
 .project-card:hover .project-overlay {
