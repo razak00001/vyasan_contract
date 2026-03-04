@@ -8,6 +8,7 @@ import OurWork from './pages/OurWork';
 import About from './pages/About';
 import ServiceArea from './pages/ServiceArea';
 import Contact from './pages/Contact';
+import ScrollToTop from './components/ScrollToTop';
 
 function App() {
   const location = useLocation();
@@ -19,6 +20,7 @@ function App() {
         <meta name="description" content="Viyasan General Contracting offers expert design, build, and contracting services for commercial and residential projects across the GTA. Specializing in kitchens, basements, and complete home renovations." />
       </Helmet>
 
+      <ScrollToTop />
       <Header />
 
       <main style={{ minHeight: '80vh' }}>
