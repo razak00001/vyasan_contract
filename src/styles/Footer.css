@@ -1,0 +1,133 @@
+.footer {
+    background-color: var(--color-primary);
+    color: #E2E8F0;
+    padding: 80px 0 30px;
+    font-family: var(--font-body);
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    margin-bottom: 50px;
+}
+
+@media (min-width: 768px) {
+    .footer-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 1024px) {
+    .footer-grid {
+        grid-template-columns: 2fr 1fr 1fr 1.5fr;
+        gap: 60px;
+    }
+}
+
+.footer-logo {
+    font-family: var(--font-heading);
+    font-size: 32px;
+    font-weight: 800;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    line-height: 1;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.footer-logo span {
+    font-size: 11px;
+    color: rgba(255, 255, 255, 0.9);
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 4px;
+    border-top: 2px solid var(--color-accent);
+    padding-top: 4px;
+}
+
+.footer-desc {
+    font-size: 15px;
+    line-height: 1.6;
+    opacity: 0.8;
+    margin-bottom: 24px;
+}
+
+.social-links {
+    display: flex;
+    gap: 16px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    transition: all var(--transition-fast);
+}
+
+.social-icon:hover {
+    background: var(--color-accent);
+    transform: translateY(-3px);
+}
+
+.footer-heading {
+    font-family: var(--font-heading);
+    color: white;
+    font-size: 18px;
+    margin-bottom: 24px;
+    font-weight: 600;
+}
+
+.footer-nav {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.footer-nav a {
+    color: inherit;
+    font-size: 15px;
+    opacity: 0.8;
+    transition: all var(--transition-fast);
+}
+
+.footer-nav a:hover {
+    opacity: 1;
+    color: white;
+    transform: translateX(5px);
+}
+
+.footer-contact {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.contact-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 15px;
+    opacity: 0.9;
+}
+
+a.contact-item:hover {
+    color: var(--color-accent);
+    opacity: 1;
+}
+
+.footer-bottom {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    padding-top: 24px;
+    text-align: center;
+    font-size: 14px;
+    opacity: 0.7;
+}

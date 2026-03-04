@@ -1,0 +1,60 @@
+/* About Page Grid */
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+@media (min-width: 992px) {
+    .about-grid {
+        grid-template-columns: 1fr 1fr;
+        gap: 80px;
+    }
+}
+
+.about-text {
+    font-size: 18px;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    margin-bottom: 24px;
+}
+
+.values-list {
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.values-list li {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 18px;
+    font-weight: 500;
+    color: var(--color-text);
+}
+
+.core-values-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--color-primary);
+    margin-top: 32px;
+    margin-bottom: 16px;
+}
+
+.value-icon {
+    color: var(--color-accent);
+}
+
+.about-image {
+    width: 100%;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-lg);
+    transition: transform 0.3s ease;
+}
+
+.about-image:hover {
+    transform: translateY(-8px);
+}

@@ -1,0 +1,70 @@
+.service-card {
+    background: white;
+    padding: 50px 40px;
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-sm);
+    transition: all var(--transition-normal);
+    border: 1px solid var(--color-border);
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+@media (max-width: 768px) {
+    .service-card {
+        padding: 40px 30px;
+    }
+}
+
+.service-card:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: transparent;
+}
+
+.service-icon-wrapper {
+    width: 70px;
+    height: 70px;
+    background: var(--color-surface);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--color-primary);
+    margin-bottom: 30px;
+    transition: all var(--transition-normal);
+}
+
+.service-card:hover .service-icon-wrapper {
+    background: var(--color-primary);
+    color: white;
+}
+
+.service-title {
+    font-size: 20px;
+    margin-bottom: 16px;
+    color: var(--color-primary);
+    font-family: var(--font-heading);
+}
+
+.service-desc {
+    color: var(--color-text-light);
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 24px;
+    flex-grow: 1;
+}
+
+.service-link {
+    color: var(--color-accent);
+    font-weight: 600;
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: gap var(--transition-fast);
+}
+
+.service-card:hover .service-link {
+    gap: 12px;
+}

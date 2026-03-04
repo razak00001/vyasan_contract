@@ -1,0 +1,211 @@
+/* Animated Image Service Hero */
+.service-hero {
+    position: relative;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    border-bottom: 1px solid var(--color-border);
+    text-align: center;
+    color: white;
+}
+
+.service-hero-bg {
+    position: absolute;
+    inset: 0;
+    background-size: cover;
+    background-position: center;
+    background-color: #1a2f4f;
+    /* Fallback */
+    z-index: 0;
+    animation: bgZoom 20s infinite alternate linear;
+}
+
+.service-hero-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(to top, rgba(26, 47, 79, 0.95), rgba(26, 47, 79, 0.4));
+    z-index: 1;
+}
+
+.service-hero-content {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+}
+
+.service-hero h1 {
+    font-size: 56px;
+    color: white;
+    text-shadow: 0 4px 12px rgba(0, 0, 0, 0.6);
+    animation: fadeInUp 0.8s ease forwards;
+    opacity: 0;
+    margin-bottom: 0;
+}
+
+@media (max-width: 768px) {
+    .service-hero h1 {
+        font-size: 36px;
+    }
+}
+
+.bg-white {
+    background-color: white;
+}
+
+.service-intro-text {
+    font-size: 22px;
+    color: var(--color-text);
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.8;
+    font-weight: 500;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+.mt-30 {
+    margin-top: 30px;
+}
+
+/* Subservices Grid */
+.subservices-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@media (min-width: 576px) {
+    .subservices-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+    .subservices-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.subservice-item {
+    background: white;
+    padding: 40px;
+    border-radius: var(--radius-lg);
+    text-align: center;
+    border: 1px solid var(--color-border);
+    transition: all var(--transition-normal);
+    box-shadow: var(--shadow-sm);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.subservice-item:hover {
+    transform: translateY(-8px);
+    box-shadow: var(--shadow-lg);
+    border-color: var(--color-primary);
+}
+
+.subservice-icon {
+    color: var(--color-accent);
+    margin-bottom: 16px;
+    background: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    box-shadow: var(--shadow-sm);
+}
+
+.subservice-title {
+    font-size: 18px;
+    color: var(--color-text);
+    font-weight: 600;
+}
+
+/* Process Steps */
+.service-process {
+    background: var(--color-surface);
+}
+
+.process-steps {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 40px;
+    position: relative;
+}
+
+@media (min-width: 768px) {
+    .process-steps {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.process-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.step-num {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background: var(--color-accent);
+    color: white;
+    font-size: 32px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    box-shadow: 0 0 0 10px rgba(211, 32, 39, 0.1);
+    /* Transparent accent box-shadow */
+}
+
+.process-step h4 {
+    font-size: 22px;
+    font-weight: 700;
+    color: var(--color-primary);
+    text-align: center;
+}
+
+/* CTA */
+.cta-section {
+    background: url('https://images.unsplash.com/photo-1541888086425-d81bb19240f5?auto=format&fit=crop&w=1600&q=80') center/cover;
+    position: relative;
+    color: white;
+    padding: 100px 0;
+}
+
+.cta-section::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: rgba(26, 47, 79, 0.85);
+}
+
+.cta-container {
+    position: relative;
+    z-index: 1;
+}
+
+.cta-section h2 {
+    color: white;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.cta-section p {
+    font-size: 20px;
+    color: #E2E8F0;
+}
