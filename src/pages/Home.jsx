@@ -147,7 +147,7 @@ const HomePage = () => {
                             <Button to="/contact" variant="accent" className="mt-30">Get Started Today</Button>
                         </div>
                         <div className="why-us-image">
-                            <img src="/home/featured_projects/about_bg.jpg" alt="Construction planning and architecture" className="rounded-image" loading="lazy" />
+                            <img src="/home/featured_projects/luxury_villa_project_downtown_area_residential.webp" alt="Professional home renovation and construction" className="rounded-image" loading="lazy" />
                         </div>
                     </div>
                 </div>
