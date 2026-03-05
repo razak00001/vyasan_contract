@@ -12,7 +12,7 @@ const Header = () => {
             <div className="container header-container">
                 {/* Logo */}
                 <Link to="/" className="logo">
-                    VIYASAN <span>GENERAL CONTRACTING</span>
+                    <img src="/logo.jpg" alt="Viyasan General Contracting Logo" />
                 </Link>
 
                 {/* Desktop Navigation */}

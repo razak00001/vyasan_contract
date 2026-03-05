@@ -13,7 +13,7 @@ const Footer = () => {
                     {/* Brand Info */}
                     <div className="footer-col">
                         <Link to="/" className="footer-logo">
-                            VIYASAN <span>GENERAL CONTRACTING</span>
+                            <img src="/logo.jpg" alt="Viyasan General Contracting Logo" className="footer-logo-img" />
                         </Link>
                         <p className="footer-desc">
                             Expert design, build, and contracting services for commercial and residential projects across the Greater Toronto Area.
